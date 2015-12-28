@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Double Linked List</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="jquery-2.1.4.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="doublelinkedlist.js"></script>
+	<script src="controller.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<h2 id="doubleLinkedListKind">Double Linked List</h2>
+		<hr/>
+		<div class="form-inline inserting-item">
+			<div class="form-group">
+				<input type="number" class="form-control" id="pivotInsertingInput" placeholder="pivot">
+				<input type="number" class="form-control" id="itemInsertingInput" placeholder="item">
+			</div>
+			<button class="btn btn-primary" id="insertingButton">insert after</button>
+		</div>
+		<div class="form-inline deleting-item">
+			<div class="form-group">
+				<input type="number" class="form-control" id="itemDeletingInput" placeholder="item">
+			</div>
+			<button class="btn btn-danger" id="deletingButton">delete post</button>
+		</div>
+		<div class="form-inline" id="itemsDisplay">
+			<button class="btn btn-primary" id="displayingItemsButton">
+				display all</button>
+				<input type="number" class="form-control" id="untilFoundInput">
+			</div>
+			<div class="form-inline display-until-found">
+			</div>
+			<ul class="list-inline" id="itemsList">
+			</ul>
+			<select class="form-control" id="selectedDoubleLinkedList">
+				<option value="DoubleLinkedList">Double Linked List</option>
+				<option value="CircularDoubleLinkedList">Circular Double Linked List</option>
+			</select>
+		</div> 
+	</body>
+	</html>
